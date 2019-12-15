@@ -1,12 +1,11 @@
 package apiserver
 
-import "testing"
-
-import "net/http/httptest"
-
-import "net/http"
-
-import "github.com/stretchr/testify/assert"
+import (
+	"github.com/stretchr/testify/assert"
+	"net/http"
+	"net/http/httptest"
+	"testing"
+)
 
 func TestAPIServer_HandleHello(t *testing.T) {
 	s := New(NewConfig())
